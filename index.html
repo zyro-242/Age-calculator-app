@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="calculate.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__input">
+        <div class="input" id="day-group">
+          <label for="day">DAY</label>
+          <input id="day" type="text" placeholder="DD" />
+          <span class="error-message"></span>
+        </div>
+        <div class="input" id="month-group">
+          <label for="month">MONTH</label>
+          <input id="month" type="text" placeholder="MM" />
+          <span class="error-message"></span>
+        </div>
+        <div class="input" id="year-group">
+          <label for="year">YEAR</label>
+          <input id="year" type="text" placeholder="YYYY" />
+          <span class="error-message"></span>
+        </div>
+      </div>
+      <div class="line">
+        <button id="btn-submit">
+          <img src="./assets/images/icon-arrow.svg" alt="" class="btn-icon" />
+        </button>
+      </div>
+      <div class="container__result">
+        <p class="result">
+          <span class="value" id="years"> -- </span>
+          years
+        </p>
+        <p class="result">
+          <span class="value" id="months"> -- </span>
+          months
+        </p>
+        <p class="result">
+          <span class="value" id="days"> -- </span>
+          days
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
